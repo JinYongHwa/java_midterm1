@@ -42,10 +42,10 @@ public class Main {
 		String accountNumber=scanner.next();		//계좌번호 입력받기
 		Account account;
 		if(accountNumber.startsWith("1")) {		//계좌번호가 '1'로 시작하면 적금계좌
-			account=new SavingAccount(accountNumber);
+			account=new SavingAccount(accountNumber);	//계좌 생성시에 계좌번호를 넣어서 생성
 		}
 		else {	//계좌번호가 '1'로 시작하지 않으면 '보통예금계좌' 이다
-			account=new NormalAccount(accountNumber);
+			account=new NormalAccount(accountNumber); //계좌 생성시에 계좌번호를 넣어서 생성
 		}
 		
 		while(true) {
