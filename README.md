@@ -49,14 +49,14 @@ public class Main {
 		while(true) {
 			try {
 				System.out.println("입금 또는 출금할 금액을 입력해주세요 0을 입력하면 프로그램이 종료됩니다");
-				int balance=scanner.nextInt();
-				if(balance>0) {
+				int balance=scanner.nextInt();	//사용자로부터 입금 또는 출금액 입력받기
+				if(balance>0) {	//0보다 클경우 입금
 					account.deposit(balance);
 				}
-				else if(balance<0) {
+				else if(balance<0) {	//0보다 작을경우 출금
 					account.withdraw(Math.abs(balance));
 				}
-				else {
+				else {		//0을 입력받을경우 프로그램이 종료됨
 					break;
 				}
 				account.printAccount();
