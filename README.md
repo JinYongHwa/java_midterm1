@@ -25,7 +25,7 @@ Account - 계좌 Class
 NormalAccount - 보통예금계좌 Class
 SavingAccount - 적금계좌 class
 
-''' java
+``` java
 import java.util.Scanner;
 
 public class Main {
@@ -64,7 +64,7 @@ public class Main {
 	}
 }
 
-'''
+```
 
 
 ![image](https://user-images.githubusercontent.com/21700482/163700531-85f8c86e-f4c1-46b1-8820-a2e482ac096e.png)
